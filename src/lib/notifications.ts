@@ -15,7 +15,6 @@ type SendFrameNotificationResult =
   | { state: "success" };
 
 export async function sendFrameNotification({
-  fid,
   title,
   body,
 }: {
