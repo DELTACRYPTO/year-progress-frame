@@ -1,10 +1,5 @@
 import { useEffect, useCallback, useState } from "react";
-import sdk, {
-  AddFrame,
-  FrameNotificationDetails,
-  SignIn as SignInCore,
-  type Context,
-} from "@farcaster/frame-sdk";
+import sdk, { type Context } from "@farcaster/frame-sdk";
 
 export default function Demo() {
   const [isSDKLoaded, setIsSDKLoaded] = useState(false);
@@ -22,12 +17,13 @@ export default function Demo() {
     }
   }, [isSDKLoaded]);
 
-  if (!isSDKLoaded) {
-    return <div>Loading...</div>;
-  }
   const toggleContext = useCallback(() => {
     setIsContextOpen((prev) => !prev);
   }, []);
+
+  if (!isSDKLoaded) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <div className="w-[300px] mx-auto py-4 px-2">
