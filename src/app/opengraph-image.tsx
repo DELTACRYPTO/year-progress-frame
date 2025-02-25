@@ -25,13 +25,13 @@ export default async function Image() {
       <div tw="h-full w-full flex flex-col justify-center items-center relative bg-white p-8">
         <h1 tw="text-5xl font-bold mb-8">Year Progress</h1>
 
-        <div tw="w-full max-w-md mb-6">
-          <div tw="flex justify-between mb-2">
+        <div tw="w-full max-w-md mb-6 flex flex-col">
+          <div tw="flex flex-row justify-between mb-2">
             <span tw="text-lg font-medium">Progress</span>
             <span tw="text-lg font-medium">{yearProgress}%</span>
           </div>
 
-          <div tw="w-full bg-gray-200 rounded-full h-6">
+          <div tw="w-full bg-gray-200 rounded-full h-6 flex">
             <div
               tw="bg-blue-600 h-6 rounded-full"
               style={{ width: `${yearProgress}%` }}
@@ -39,7 +39,7 @@ export default async function Image() {
           </div>
         </div>
 
-        <div tw="text-center text-gray-500 mt-6">
+        <div tw="text-center text-gray-500 mt-6 flex flex-col">
           <p tw="text-lg">Year {now.getFullYear()}</p>
           <p tw="mt-1 text-lg">Make every day count!</p>
         </div>
