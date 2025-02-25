@@ -142,6 +142,24 @@
     ox "^0.4.4"
     zod "^3.24.1"
 
+"@farcaster/frame-core@0.0.27":
+  version "0.0.27"
+  resolved "https://registry.yarnpkg.com/@farcaster/frame-core/-/frame-core-0.0.27.tgz#2c171a2f60b4a9b566b2bbf3bd14ae733089b820"
+  integrity sha512-qHypYYY9hUnXmSr0i0Ii48db/ZRSY5aaGCedXYT/Rfv1o+CKxMxD1zUzHeuGa6Y51WZj51ZqQuCkfDCA0zqVFg==
+  dependencies:
+    ox "^0.4.4"
+    zod "^3.24.1"
+
+"@farcaster/frame-node@^0.0.16":
+  version "0.0.16"
+  resolved "https://registry.yarnpkg.com/@farcaster/frame-node/-/frame-node-0.0.16.tgz#179ade8ce4781d5565318e7c35495188b918cbbd"
+  integrity sha512-clyKNfayf85kQnjLowi3J66qMsFrtvqbb42UHNaGeTgVpRruNZH3ZAcvsbSP0HV+4+wgbywxQdXgfQwvdSqrMA==
+  dependencies:
+    "@farcaster/frame-core" "0.0.27"
+    "@noble/curves" "^1.7.0"
+    ox "^0.4.4"
+    zod "^3.24.1"
+
 "@farcaster/frame-sdk@^0.0.28":
   version "0.0.28"
   resolved "https://registry.yarnpkg.com/@farcaster/frame-sdk/-/frame-sdk-0.0.28.tgz#0318c46e87280a893563598dbc7bc717e4031339"
@@ -659,7 +677,7 @@
   dependencies:
     "@noble/hashes" "1.4.0"
 
-"@noble/curves@1.8.1", "@noble/curves@^1.6.0", "@noble/curves@~1.8.1":
+"@noble/curves@1.8.1", "@noble/curves@^1.6.0", "@noble/curves@^1.7.0", "@noble/curves@~1.8.1":
   version "1.8.1"
   resolved "https://registry.yarnpkg.com/@noble/curves/-/curves-1.8.1.tgz#19bc3970e205c99e4bdb1c64a4785706bce497ff"
   integrity sha512-warwspo+UYUPep0Q+vtdVB4Ugn8GGQj8iyB3gnRWsztmUHTI3S1nhdiWNsPUGL0vud7JlRRk1XEu7Lq1KGTnMQ==
